@@ -66,3 +66,56 @@ h1{
     font-size: 3em;
     text-transform: uppercase;
 }
+nav{
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2em;
+    list-style-type: none;
+    padding: 15px;
+}
+nav a:hover{
+    background-color: #007D7B;
+    font-size: 2em;
+    color: black;
+}
+article{
+    background-color: white;
+}
+article p{
+    padding: 0 15px;
+    color: black;
+    font-size: 1.25em;
+    background-color: white;
+}
+article h2{
+    background: white;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 2em;
+}
+.gallery{
+    background-color: white;
+}
+.gallery img{
+    background-color: white;
+}
+#contact p{
+    font-size: 1.25em;
+    text-align: center;
+    margin: 10px;
+}
+#contact h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
