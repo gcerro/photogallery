@@ -15,84 +15,93 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li><a href="#top">Top</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <article>
+            <section id="about">
                 <h2>About</h2>
                 <p>Hello! I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my specialty and it's taken me all over the world.</p>
-            </article>
-            <section>
+            </section>
+            <section id="gallery">
                 <h2>Gallery</h2>
                 <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-                    <div class="gallery">
+                    <div class="photos">
                         <figure>
                             <img src="images/Chile.png" alt="chile">
-                            <figcaption>Chile, 2001</figcaption>
+                            <figcaption id="chile">Chile, 2001</figcaption>
                         </figure>
                         <figure>
                             <img src="images/Guatemala.png" alt="guatemala">
-                            <figcaption>Guatemala, 1997</figcaption>
+                            <figcaption id="guatemala">Guatemala, 1997</figcaption>
                         </figure>
                         <figure>
                             <img src="images/Hawaii.png" alt="hawaii">
-                            <figcaption>Hawaii, 2010</figcaption>
+                            <figcaption id="hawaii">Hawaii, 2010</figcaption>
                         </figure>
                         <figure>
                             <img src="images/Iran.png" alt="iran">
-                            <figcaption>Iran, 1999</figcaption>
+                            <figcaption id="iran">Iran, 1999</figcaption>
                         </figure>
                         <figure>
                             <img src="images/Ireland.png" alt="ireland">
-                            <figcaption>Ireland, 2012</figcaption>
+                            <figcaption id="ireland">Ireland, 2012</figcaption>
                         </figure>
                         <figure>
                             <img src="images/Italy.png" alt="italy">
-                            <figcaption>Italy, 2015</figcaption>
+                            <figcaption id="italy">Italy, 2015</figcaption>
                         </figure>
                         <figure>
                             <img src="images/Moab-Desert.png" alt="moab">
-                            <figcaption>Moab Desert, 2020</figcaption>
+                            <figcaption id="moab">Moab Desert, 2020</figcaption>
                         </figure>
                         <figure>
                             <img src="images/Rocky-Mountains.png" alt="mountains">
-                            <figcaption>Rocky Mountains, 2009</figcaption>
+                            <figcaption id="rocky">Rocky Mountains, 2009</figcaption>
                         </figure>
                         <figure>
                             <img src="images/Switzerland.png" alt="switzerland">
-                            <figcaption>Switzerland, 2014</figcaption>
+                            <figcaption id="switzerland">Switzerland, 2014</figcaption>
                         </figure>
                         <figure>
                             <img src="images/UK.png" alt="uk">
-                            <figcaption>UK, 2005</figcaption>
+                            <figcaption id="uk">UK, 2005</figcaption>
                         </figure>
                         <figure>
                             <img src="images/USA.png" alt="usa">
-                            <figcaption>USA, 2021</figcaption>
+                            <figcaption id="usa">USA, 2021</figcaption>
                         </figure>
                         <figure>
                             <img src="images/Wyoming.png" alt="wyoming">
-                            <figcaption>Wyoming, 2021</figcaption>
+                            <figcaption id="wyoming">Wyoming, 2021</figcaption>
                         </figure>
                     </div>
             </section>
             <section id="info">
-                <h2>Contact</h2>
-                <p>Please fill out this form and I'll connect with you soon.</p>
-                <form action="#">
-                    <label for="name">Name</label><br>
-                    <input type="text" name="name" id="name" value="Your full name">
-                    <label for="emailaddress">Email</label>
-                    <input type="text" name="emailaddress" id="emailaddress" value="Enter your email address">
-                    <label for="message">Message</label>
-                    <input type="text" name="message" id="message" value="What can I help you with?">
-                    <input type="submit" value="Submit"> 
+                <form>
+                    <h2>Contact</h2>
+                    <p>Please fill out this form and I'll connect with you soon.</p>
+                    <div class="text">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" value="Your full name">
+                    </div>
+                    <div class="text">
+                        <label for="emailaddress">Email</label>
+                        <input type="text" name="emailaddress" id="emailaddress" value="Enter your email address">
+                    </div>
+                    <div class="text">
+                        <label for="message">Message</label>
+                        <input type="text" name="message" id="message" value="What can I help you with?">
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Submit">
+                    </div>
                 </form>
             </section>
         </main>
         <footer>
-            <p>Copyright 2021 TK Photography</p>
+            <p><small>&#169 Copyright 2021 TK Photography</small></p>
         </footer>
     </body>
 </html>

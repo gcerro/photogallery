@@ -50,72 +50,293 @@ table {
 
 html{
     font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    margin: 0 auto;
-    color: white;
 }
 body{
-    background-color: black;
+    background-color: white; 
     max-width: 485px;
+    width: 100;
+    margin: auto;
+}
+main{
+    background-color: black;
 }
 h1{
-    background-color: white;
+    background: white;
     color: #007D7B;
-    padding: 15px;
     text-align: center;
+    border-left: 10px;
+    border-right: 10px;
+    top: 20px;
+    position: relative;
     font-size: 3em;
     text-transform: uppercase;
+    font-weight: bold;
 }
 nav{
-    padding: 0;
+    background-color: black;
+}
+nav li{
+    text-decoration: none;
+    height: 55px;
+    position: relative;
+    top: 35px;
+    margin: 10px;
+    list-style: none;
 }
 nav ul{
     display: flex;
+    height: 100px;
 }
 nav a{
-    display: inline-block;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 2em;
-    list-style-type: none;
-    padding: 15px;
+    font-size: 1.5em;
 }
 nav a:hover{
-    background-color: #007D7B;
+    color: #007D7B;
+    font-weight: bold;
+    text-decoration: none;
+}
+[href="#top"]{
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    background-color: rgba(0,0,0,.35);
+    color: white;
+    border: 2px;
+    border-radius: 10px 0 0px 0px;
+    padding: 10px;
+}
+h2{
     font-size: 2em;
-    color: black;
-}
-article{
-    background-color: white;
-}
-article p{
-    padding: 0 15px;
-    color: black;
-    font-size: 1.25em;
-    background-color: white;
-}
-article h2{
-    background: white;
-    color: black;
-    text-align: center;
     text-transform: uppercase;
-    padding: 15px;
-    font-size: 2em;
-}
-.gallery{
-    background-color: white;
-}
-.gallery img{
-    background-color: white;
-}
-#contact p{
-    font-size: 1.25em;
+    font-weight: bold;
     text-align: center;
+}
+#gallery{
+    margin: auto;
+    width: 80%;
+    color: black;
+    padding: 10px;
+    background-color: white;
+}
+#about{
+    margin: auto;
+    width: 80%;
+    color: black;
+    padding: 10px;
+    background-color: white;
+}
+p{
+    font-size: 1.25em;
     margin: 10px;
 }
-#contact h2{
+#gallery{
+    width: 90%;
+    grid-template-columns: 1fr;
+    margin: auto;
+    display: grid;
+    text-align: center;
+}
+figure {
+    padding: 10px 0;
+    margin:auto;
+    position: relative;
+    width: 95%;
+}
+figcaption{ 
+    text-transform: uppercase;
+}
+#chile{
+    bottom: 25px;
+    color: white;
+    width: 100%;
+    position: absolute;
+}
+#guatemala{
+    bottom: 25px;
+    color: white;
+    width: 100%;
+    position: absolute;
+}
+#hawaii{
+    bottom: 25px;
+    color: white;
+    width: 100%;
+    position: absolute;
+}
+#iran{
+    bottom: 25px;
+    color: black;
+    width: 100%;
+    position: absolute;
+}
+#ireland{
+    bottom: 25px;
+    color: black;
+    width: 100%;
+    position: absolute;
+}
+#italy{
+    bottom: 25px;
+    color: black;
+    width: 100%;
+    position: absolute;
+}
+#moab{
+    bottom: 25px;
+    color: white;
+    width: 100%;
+    position: absolute;
+}
+#rocky{
+    bottom: 25px;
+    color: black;
+    width: 100%;
+    position: absolute;
+}
+#switzerland{
+    bottom: 25px;
+    color: black;
+    width: 100%;
+    position: absolute;
+}
+#uk{
+    bottom: 25px;
+    color: black;
+    width: 100%;
+    position: absolute;
+}
+#usa{
+    bottom: 25px;
+    color: black;
+    width: 100%;
+    position: absolute;
+}
+#wyoming{
+    bottom: 25px;
+    color: white;
+    width: 100%;
+    position: absolute;
+}
+form{
+    padding-top: 20px;
+    margin: auto;
+}
+form h2{
+    color: white;
+    text-align: center;
+}
+form p{
+    text-align: center;
+    color: white;
+}
+#contact{
+    margin: auto;
+    width: 70%;
+}
+label{
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 10px;
+    color: white;
+}
+.text{
+    width: 100%;
+    height: 25px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+::value{
+    padding-left: 7px;
+    font-weight: bold;
+    color: #007D7B;
+}
+.button{
+    margin: 10px;
+    justify-content: center;
+    display: flex;
+}
+#submit{
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 2em;
+    background-color: #007D7B;
+    height: 35px;
+    padding: 10px;
+    margin: 25px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 50%;
+}
+small{
+    font-size: 1em;
+}
+footer{
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 25px;
-    font-size: 2em;
+    color: white;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 880px) {
+    h1{
+        font-weight: bold;
+        padding-left: 10px;
+        text-align: left;
+    }
+    nav{
+        text-align: center;
+        height: 100px;
+    }
+    nav li{
+        text-decoration: none;
+        height: 55px;
+        top: 35px;
+        list-style: none;
+        margin: 10px;
+        position: relative;
+    }
+    img{
+        width: 100;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 6 (1fr);
+        margin: auto;
+        justify-content: center;
+        gap: 10px;
+    }
+    form{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    nav{
+        height: 100px;
+        text-align: right;
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4 (1fr);
+        justify-content: center;
+        margin: auto;
+        gap: 10px;
+        display: grid;
+    }
+    img{
+        width: 100%;
+    }
+    .text{
+        width: 80%;
+        margin: auto;
+    }
 }
